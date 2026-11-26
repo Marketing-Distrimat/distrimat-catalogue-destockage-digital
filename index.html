@@ -128,11 +128,11 @@ body{background:var(--cr);color:var(--dk)}
 /* Photo — plus grande */
 .card-photo{
   position:relative;padding-top:65%;
-  background:#FFFFFF;overflow:hidden;
+  background:var(--bg);overflow:hidden;
 }
 .card-photo img{
   position:absolute;inset:0;width:100%;height:100%;
-  object-fit:contain;display:block;background:#FFFFFF;
+  object-fit:cover;display:block;
 }
 .card-photo-ph{
   position:absolute;inset:0;display:flex;
@@ -631,7 +631,7 @@ body{background:var(--cr);color:var(--dk)}
   <div class="topbar-brand">DISTRIMAT<small>PIERRES DU MONDE</small></div>
   <input class="topbar-search" type="search" id="search"
          placeholder="🔍  Rechercher un produit, une référence…" autocomplete="off"/>
-  <span class="topbar-count" id="count">464 références</span>
+  <span class="topbar-count" id="count">463 références</span>
 </header>
 
 <div class="layout">
@@ -645,7 +645,7 @@ body{background:var(--cr);color:var(--dk)}
     <a href="#sec-4" class="nav-item"><span class="nav-icon">⊠</span>MOSAÏQUES<span class="nav-count">44</span></a>
     <a href="#sec-5" class="nav-item"><span class="nav-icon">◫</span>OUTDOOR CÉRAMIQUE<span class="nav-count">2</span></a>
     <a href="#sec-6" class="nav-item"><span class="nav-icon">◧</span>SPLIT FACE XXL<span class="nav-count">18</span></a>
-    <a href="#sec-7" class="nav-item"><span class="nav-icon">◨</span>SPLIT FACE<span class="nav-count">9</span></a>
+    <a href="#sec-7" class="nav-item"><span class="nav-icon">◨</span>SPLIT FACE<span class="nav-count">8</span></a>
     <a href="#sec-8" class="nav-item"><span class="nav-icon">▭</span>PAYSAGE<span class="nav-count">70</span></a>
     <a href="#sec-9" class="nav-item"><span class="nav-icon">◆</span>ACCESSOIRES<span class="nav-count">41</span></a>
     <a href="#sec-10" class="nav-item"><span class="nav-icon">▬</span>TRANCHES<span class="nav-count">1</span></a>
@@ -5972,9 +5972,9 @@ body{background:var(--cr);color:var(--dk)}
     </section>
 
     <section class="type-block" id="sec-7">
-  <div class="type-header"><span class="type-icon">◨</span><span class="type-name">SPLIT FACE</span><span class="type-count">9 références</span></div>
+  <div class="type-header"><span class="type-icon">◨</span><span class="type-name">SPLIT FACE</span><span class="type-count">8 références</span></div>
   <div class="range-block">
-    <div class="range-head">SPLIT FACE<span class="range-count"> (9)</span></div>
+    <div class="range-head">SPLIT FACE<span class="range-count"> (8)</span></div>
     <div class="grid">
       <div class="card" data-code="DIS0906" data-sec="Split Face" data-sf="Split Face">
         <div class="card-photo">
@@ -6072,20 +6072,6 @@ body{background:var(--cr);color:var(--dk)}
           <div class="card-desc" title="5/7,5/10xLLx2,1 cm, Royal Grey, Split Face, Bord Scié">5/7,5/10xLLx2,1 cm, Royal Grey, Split Face, Bord Scié</div>
           <div class="card-info"><div class="info-row"><div class="info-cell"><span class="fl">Bord</span><span class="fv">Scié</span></div><div class="info-cell"><span class="fl">Surface</span><span class="fv">Eclatée</span></div></div><div class="info-row"><div class="info-cell"><span class="fl">Kg/UV</span><span class="fv">58,80</span></div></div><div class="info-row"><div class="info-cell"><span class="fl">Cdt UB/Pal</span><span class="fv">72,00</span></div><div class="info-cell"><span class="fl">Cdt UV/Pal</span><span class="fv">19,80</span></div></div></div>
           <div class="card-page" style="font-size:14px;font-weight:800;color:var(--or)">14,95 €</div>
-        </div>
-      </div>
-      <div class="card" data-code="DIS0815" data-sec="Split Face" data-sf="Split Face">
-        <div class="card-photo">
-          <img src="assets/products/DIS0815.jpg" alt="DIS0815"
-               onerror="this.onerror=null;this.src='assets/placeholder.png'" loading="lazy"/>
-          <div class="card-photo-ph"><span>DIS0815</span></div>
-          
-        </div>
-        <div class="card-body">
-          <div class="card-code">DIS0815</div>
-          <div class="card-desc" title="5/7,5/10xLLx2,1 cm, Cappadoce Light, Split Face, Bord Scié">5/7,5/10xLLx2,1 cm, Cappadoce Light, Split Face, Bord Scié</div>
-          <div class="card-info"><div class="info-row"><div class="info-cell"><span class="fl">Bord</span><span class="fv">Scié</span></div><div class="info-cell"><span class="fl">Surface</span><span class="fv">Eclatée</span></div></div><div class="info-row"><div class="info-cell"><span class="fl">Kg/UV</span><span class="fv">58,80</span></div></div><div class="info-row"><div class="info-cell"><span class="fl">Cdt UB/Pal</span><span class="fv">72,00</span></div><div class="info-cell"><span class="fl">Cdt UV/Pal</span><span class="fv">19,80</span></div></div></div>
-          <div class="card-page" style="font-size:14px;font-weight:800;color:var(--or)">19,95 €</div>
         </div>
       </div>
       <div class="card" data-code="DIS2132" data-sec="Split Face" data-sf="Split Face">
@@ -7924,7 +7910,7 @@ body{background:var(--cr);color:var(--dk)}
             <div class="adm-row">
               <div class="adm-field">
                 <label class="adm-label">Section (type produit) *</label>
-                                                <select class="adm-select" id="fSec">
+                                <select class="adm-select" id="fSec">
                   <option value="">— Choisir —</option>
                   <option>PAREMENT</option>
                   <option>ACCESSOIRE</option>
@@ -8346,7 +8332,7 @@ function buildCardHTML(p) {
   return `<div class="card" data-code="${p.code}" data-sec="${p.sec}" data-sf="${p.sf}">
     <div class="card-photo">
       <img src="assets/products/${p.code}.jpg" alt="${p.code}"
-           onerror="this.onerror=null;this.src='assets/placeholder.png'" loading="lazy"/>
+           onerror="this.parentNode.classList.add('no-img')" loading="lazy"/>
       <div class="card-photo-ph"><span>${p.code}</span></div>
     </div>
     <div class="card-body">
